@@ -2,6 +2,8 @@
 
 <ul>
   <% @questions.each do |question| %>
-    <li><%= link_to question.title, question_path(question.id) %></li>
+    <li><%= link_to question.title, question_path(question) %></li>
   <% end %>
 </ul>
+
+<a href="/questions/new">Submit a New Question</a>
